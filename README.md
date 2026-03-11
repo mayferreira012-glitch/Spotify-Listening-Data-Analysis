@@ -5,7 +5,6 @@
 Analisar dados do histórico de reprodução do Spotify para identificar padrões de comportamento de escuta ao longo do tempo. A análise busca compreender preferências musicais, frequência de reprodução, taxa de músicas puladas e distribuição do tempo de escuta.
 O projeto foi desenvolvido com foco em **portfólio de análise de dados**, com o objetivo de demonstrar habilidades em **exploração de dados, transformação, modelagem analítica e criação de dashboards interativos**.
 
----
 
 ## Dataset
 
@@ -20,7 +19,6 @@ A base de dados utilizada corresponde ao **histórico de streaming do Spotify**,
 - Reprodução em modo shuffle  
 - Reprodução online ou offline  
 
----
 
 ## Ferramentas utilizadas
 
@@ -28,7 +26,6 @@ A base de dados utilizada corresponde ao **histórico de streaming do Spotify**,
 - **Power Query** – limpeza e transformação dos dados  
 - **DAX** – criação de métricas e medidas analíticas  
 
----
 
 ## Principais etapas
 
@@ -63,7 +60,6 @@ Desenvolvimento de um **dashboard interativo** com diferentes visualizações, i
 
 Análise dos principais padrões identificados no comportamento de escuta a partir das visualizações desenvolvidas.
 
----
 
 ## Principais insights
 
