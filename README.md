@@ -64,7 +64,10 @@ Análise dos principais padrões identificados no comportamento de escuta a part
 
 ## Principais insights
 
-- Alguns poucos artistas concentram grande parte das reproduções totais;  
-- O tempo de reprodução apresenta uma distribuição concentrada em valores intermediários;  
-- Há variações no comportamento de escuta ao longo do tempo, indicando padrões de consumo distintos entre períodos.
+- Poucos artistas concentram grande parte das reproduções totais.
+- As músicas mais ouvidas estão diretamente relacionadas com os álbuns mais ouvidos, indicando que poucos álbuns são ouvidos integralmente.
+- O tempo de reprodução apresenta uma distribuição concentrada em valores intermediários.
+- Os períodos da tarde e da noite concentram o maior volume de reproduções, sendo a sexta-feira o dia com maior número de músicas tocadas.
+- A maior parte dos streamings é feita em modo aleatório, com a plataforma online e por meio do celular.
+- Há variações no comportamento de escuta ao longo dos anos, indicando padrões de consumo distintos entre os períodos.
 
