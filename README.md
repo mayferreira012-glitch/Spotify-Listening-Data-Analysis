@@ -10,21 +10,21 @@ O projeto foi desenvolvido com foco em **portfólio de análise de dados**, com 
 
 A base de dados utilizada corresponde ao **histórico de streaming do Spotify**, contendo informações como:
 
-- Data e horário da reprodução  
-- Nome da música  
-- Artista  
-- Álbum  
-- Tempo de reprodução da faixa  
-- Indicação se a música foi pulada  
-- Reprodução em modo shuffle  
-- Reprodução online ou offline  
+- Data e horário da reprodução. 
+- Nome da música.  
+- Artista.  
+- Álbum.  
+- Tempo de reprodução da faixa.  
+- Indicação se a música foi pulada.  
+- Reprodução em modo shuffle.  
+- Reprodução online ou offline.  
 
 
 ## Ferramentas utilizadas
 
-- **Power BI** – criação do dashboard e visualizações interativas  
-- **Power Query** – limpeza e transformação dos dados  
-- **DAX** – criação de métricas e medidas analíticas  
+- **Power BI** – criação do dashboard e visualizações interativas.  
+- **Power Query** – limpeza e transformação dos dados.  
+- **DAX** – criação de métricas e medidas analíticas.  
 
 
 ## Principais etapas
@@ -41,20 +41,20 @@ Importação do histórico de reprodução e análise inicial da estrutura do da
 
 ### 3 - Análise Exploratória (EDA)
 
-- Distribuição do tempo de reprodução das músicas  
-- Frequência de escuta por artista e música  
-- Análise da taxa de músicas puladas  
-- Identificação de padrões temporais de escuta  
+- Distribuição do tempo de reprodução das músicas.  
+- Frequência de escuta por artista e música. 
+- Análise da taxa de músicas puladas.  
+- Identificação de padrões temporais de escuta.  
 
 ### 4 - Visualização de dados
 
 Desenvolvimento de um **dashboard interativo** com diferentes visualizações, incluindo:
 
-- Top artistas mais ouvidos  
-- Distribuição do tempo de reprodução  
-- Taxa de músicas puladas  
-- Padrões de escuta ao longo do tempo  
-- Análises por período e comportamento de reprodução  
+- Top artistas mais ouvidos;  
+- Distribuição do tempo de reprodução;  
+- Taxa de músicas puladas;  
+- Padrões de escuta ao longo do tempo; 
+- Análises por período e comportamento de reprodução.  
 
 ### 5 - Interpretação dos resultados
 
@@ -63,8 +63,8 @@ Análise dos principais padrões identificados no comportamento de escuta a part
 
 ## Principais insights
 
-- Parte significativa das músicas não é reproduzida até o final, indicando uma presença relevante de **skips**.  
-- Alguns poucos artistas concentram grande parte das reproduções totais.  
-- O tempo de reprodução apresenta uma distribuição concentrada em valores intermediários.  
+- Parte significativa das músicas não é reproduzida até o final, indicando uma presença relevante de **skips**;  
+- Alguns poucos artistas concentram grande parte das reproduções totais;  
+- O tempo de reprodução apresenta uma distribuição concentrada em valores intermediários;  
 - Há variações no comportamento de escuta ao longo do tempo, indicando padrões de consumo distintos entre períodos.
 
