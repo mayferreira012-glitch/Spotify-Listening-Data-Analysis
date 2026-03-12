@@ -2,13 +2,13 @@
 
 ## Objetivo
 
-Analisar dados do histórico de reprodução do Spotify para identificar padrões de comportamento de escuta ao longo do tempo. A análise busca compreender preferências musicais, frequência de reprodução, taxa de músicas puladas e distribuição do tempo de escuta.
-O projeto foi desenvolvido com foco em **portfólio de análise de dados**, com o objetivo de demonstrar habilidades em **exploração de dados, transformação, modelagem analítica e criação de dashboards interativos**.
+Analisar dados do meu histórico de reprodução do Spotify para identificar padrões de comportamento de escuta ao longo do tempo. A análise busca apresentar minhas preferências musicais, frequência de reprodução, taxa de músicas puladas e distribuição do tempo de escuta.
+O projeto foi desenvolvido com foco em **portfólio de análise de dados**, com o objetivo de demonstrar habilidades em **exploração e transformação de dados, modelagem analítica e criação de dashboards interativos**.
 
 
 ## Dataset
 
-A base de dados utilizada corresponde ao **histórico de streaming do Spotify**, contendo informações como:
+A base de dados utilizada corresponde ao meu **histórico de streaming do Spotify**, contendo informações como:
 
 - Data e horário da reprodução. 
 - Nome da música.  
@@ -31,18 +31,19 @@ A base de dados utilizada corresponde ao **histórico de streaming do Spotify**,
 
 ### 1 - Extração e compreensão dos dados
 
-Importação do histórico de reprodução e análise inicial da estrutura do dataset, identificando as principais variáveis e possíveis inconsistências.
+- Importação do histórico de reprodução, disponibilizado pelo Spotify mediante solicitação.
+- Análise inicial da estrutura do dataset, identificando as principais variáveis e possíveis inconsistências.
 
 ### 2 - Limpeza e tratamento
 
-- Tratamento de valores nulos e inconsistentes  
-- Padronização de colunas  
-- Ajustes em campos de data e horário  
+- Tratamento de valores nulos e inconsistentes.  
+- Padronização de colunas.  
+- Ajustes em campos de data e horário.  
 
 ### 3 - Análise Exploratória (EDA)
 
 - Distribuição do tempo de reprodução das músicas.  
-- Frequência de escuta por artista e música. 
+- Frequência de escuta por artista, música e álbum.
 - Análise da taxa de músicas puladas.  
 - Identificação de padrões temporais de escuta.  
 
@@ -50,11 +51,11 @@ Importação do histórico de reprodução e análise inicial da estrutura do da
 
 Desenvolvimento de um **dashboard interativo** com diferentes visualizações, incluindo:
 
-- Top artistas mais ouvidos;  
-- Distribuição do tempo de reprodução;  
-- Taxa de músicas puladas;  
-- Padrões de escuta ao longo do tempo; 
-- Análises por período e comportamento de reprodução.  
+- Análise geral do comportamento de escuta a partir dos dados disponíveis; 
+- Identificação de padrões de reprodução ao longo do tempo;  
+- Exploração das principais preferências musicais;  
+- Análise do comportamento de reprodução, incluindo músicas puladas e tempo de escuta; 
+- Análises complementares sobre concentração de reproduções por artista.
 
 ### 5 - Interpretação dos resultados
 
@@ -63,7 +64,6 @@ Análise dos principais padrões identificados no comportamento de escuta a part
 
 ## Principais insights
 
-- Parte significativa das músicas não é reproduzida até o final, indicando uma presença relevante de **skips**;  
 - Alguns poucos artistas concentram grande parte das reproduções totais;  
 - O tempo de reprodução apresenta uma distribuição concentrada em valores intermediários;  
 - Há variações no comportamento de escuta ao longo do tempo, indicando padrões de consumo distintos entre períodos.
