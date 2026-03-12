@@ -1,0 +1,43 @@
+D_Calendario = 
+
+VAR MinData = MIN(DF[DateTime])
+VAR MaxData = MAX(DF[DateTime])
+
+VAR datas =  
+
+    CALENDAR(
+        MinData,
+        MaxData
+    )
+
+RETURN
+
+ADDCOLUMNS(
+
+    datas,
+    "Ano", YEAR([Date]),
+    "TrimestreNum", QUARTER([Date]),
+    "Trimestre", CONCATENATE("Trim ", FORMAT([Date], "Q")),
+    "MesNum", MONTH([Date]),
+    "MesAbrev", FORMAT([Date], "MMM", "pt-br"),
+    "Mes", FORMAT([Date], "Mmmm","pt-br"),
+    "MesRef", FORMAT([Date],"YYYY-MM-01"),
+    "Dia", DAY([Date]),
+    "DiaSemanaNum", WEEKDAY([Date]),
+    "DiaSemana", FORMAT([Date], "DDD", "pt-br"),
+    "AnoMesNum", YEAR([Date]) * 100 + MONTH([Date]),
+    "AnoMes", FORMAT([Date], "MMM YY"),
+    "SemanaAno", WEEKNUM([Date]),
+    "AnoSemanaNum", YEAR([Date]) * 100 + WEEKNUM([Date]),
+    "AnoSemana", FORMAT([Date], "YYYY-WW"),
+    "DiaSemanaDia", FORMAT([Date], "DDD DD"),
+    "IsToDate", [Date] <= MaxData,
+    "IsYearToDate", (MONTH([Date]) * 100 + DAY([Date])) <=
+           (MONTH(MaxData) * 100 + DAY(MaxData)),
+    "IsMonthToDate", DAY([Date]) <= DAY(MaxData),
+    "Semestre", CONCATENATE("Sem. ", ROUNDUP(MONTH([Date])/6, 0)),
+    "cAnoMes", FORMAT([Date], "YYYY.MM"),
+    "Quinzena", CONCATENATE("q", ROUNDUP( DAY([Date]) /
+           (DAY(EOMONTH([Date], 0)) / 2), 0))
+
+)  
