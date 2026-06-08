@@ -1,73 +1,179 @@
-# Spotify Listening Data Analysis
+# Spotify Listening Analytics Dashboard
 
-## Objetivo
+## Sobre o Projeto
 
-Analisar dados do meu histórico de reprodução do Spotify para identificar padrões de comportamento de escuta ao longo do tempo. A análise busca apresentar minhas preferências musicais, frequência de reprodução, taxa de músicas puladas e distribuição do tempo de escuta.
-O projeto foi desenvolvido com foco em **portfólio de análise de dados**, com o objetivo de demonstrar habilidades em **exploração e transformação de dados, modelagem analítica e criação de dashboards interativos**.
+Dashboard analítico desenvolvido em Power BI utilizando o histórico completo de streaming exportado pelo Spotify.
+O projeto foi criado com o objetivo de transformar dados brutos de reprodução musical em indicadores e visualizações capazes de revelar padrões de comportamento, hábitos de consumo e preferências musicais ao longo de mais de 10 anos de utilização da plataforma.
+Os dados foram extraídos diretamente do Spotify e passaram por processos de tratamento, modelagem e enriquecimento para construção de uma solução analítica completa.
 
+---
 
-## Dataset
+## Objetivos
 
-A base de dados utilizada corresponde ao meu **histórico de streaming do Spotify**, contendo informações como:
+* Analisar hábitos de consumo musical ao longo do tempo.
+* Identificar artistas, músicas e álbuns mais reproduzidos.
+* Avaliar padrões de escuta por horário e dia da semana.
+* Investigar o comportamento de músicas concluídas e puladas.
+* Medir o impacto do modo aleatório (shuffle) e do modo offline.
+* Comparar o uso entre diferentes dispositivos e plataformas.
 
-- Data e horário da reprodução. 
-- Nome da música.  
-- Artista.  
-- Álbum.  
-- Tempo de reprodução da faixa.  
-- Indicação se a música foi pulada.  
-- Reprodução em modo shuffle.  
-- Reprodução online ou offline.  
+---
 
+## Tecnologias Utilizadas
 
-## Ferramentas utilizadas
+* Power BI
+* Power Query
+* DAX
+* Modelagem Dimensional
+* Bookmarks
+* Data Visualization
 
-- **Power BI** – criação do dashboard e visualizações interativas.  
-- **Power Query** – limpeza e transformação dos dados.  
-- **DAX** – criação de métricas e medidas analíticas.  
+---
 
+## Arquitetura da Solução
 
-## Principais etapas
+```text
+  Spotify Export 
+        │
+        ▼
+ Power Query (ETL)
+        │
+        ▼
+ Modelo Dimensional
+        │
+ ├── Fato Streaming
+ └── Dimensão Calendário
+        │
+        ▼
+      DAX
+        │
+        ▼
+   Dashboards Power BI
+```
 
-### 1 - Extração e compreensão dos dados
+---
 
-- Importação do histórico de reprodução, disponibilizado pelo Spotify mediante solicitação.
-- Análise inicial da estrutura do dataset, identificando as principais variáveis e possíveis inconsistências.
+## Estrutura dos Dados
 
-### 2 - Limpeza e tratamento
+Os dados de origem contêm informações detalhadas de cada reprodução realizada no Spotify, incluindo:
+* Data e hora da reprodução
+* Música
+* Artista
+* Álbum
+* Tempo reproduzido
+* Plataforma utilizada
+* País de conexão
+* Status de música pulada
+* Uso de modo aleatório
+* Uso offline
 
-- Tratamento de valores nulos e inconsistentes.  
-- Padronização de colunas.  
-- Ajustes em campos de data e horário.  
+---
 
-### 3 - Análise Exploratória (EDA)
+## Páginas do Dashboard
 
-- Distribuição do tempo de reprodução das músicas.  
-- Frequência de escuta por artista, música e álbum.
-- Análise da taxa de músicas puladas.  
-- Identificação de padrões temporais de escuta.  
+### Visão Geral
 
-### 4 - Visualização de dados
+Indicadores gerais do histórico de consumo musical:
+* Tempo total de reprodução
+* Quantidade de reproduções
+* Músicas distintas
+* Álbuns distintos
+* Evolução anual do tempo consumido
+* Taxa de músicas concluídas e puladas
 
-Desenvolvimento de um **dashboard interativo** com diferentes visualizações, incluindo:
+### Perfil de Consumo
 
-- Análise geral do comportamento de escuta a partir dos dados disponíveis; 
-- Identificação de padrões de reprodução ao longo do tempo;  
-- Exploração das principais preferências musicais;  
-- Análise do comportamento de reprodução, incluindo músicas puladas e tempo de escuta; 
-- Análises complementares sobre concentração de reproduções por artista.
+Análise comportamental de utilização:
+* Reprodução por período do dia
+* Reprodução por dia da semana
+* Heatmap horário
+* Sazonalidade mensal
 
-### 5 - Interpretação dos resultados
+### Ranking Musical
 
-Análise dos principais padrões identificados no comportamento de escuta a partir das visualizações desenvolvidas.
+Análise dos conteúdos mais consumidos:
+* Artistas mais ouvidos
+* Músicas mais reproduzidas
+* Álbuns mais reproduzidos
+* Participação percentual dos artistas mais relevantes
 
+### Comportamento de Reprodução
 
-## Principais insights
+Análises relacionadas ao uso da plataforma:
+* Shuffle ligado vs desligado
+* Offline vs online
+* Distribuição do tempo de reprodução
+* Plataformas mais utilizadas
 
-- Poucos artistas concentram grande parte das reproduções totais.
-- As músicas mais ouvidas estão diretamente relacionadas com os álbuns mais ouvidos, indicando que poucos álbuns são ouvidos integralmente.
-- O tempo de reprodução apresenta uma distribuição concentrada em valores intermediários.
-- Os períodos da tarde e da noite concentram o maior volume de reproduções, sendo a sexta-feira o dia com maior número de músicas tocadas.
-- A maior parte dos streamings é feita em modo aleatório, com a plataforma online e por meio do celular.
-- Há variações no comportamento de escuta ao longo dos anos, indicando padrões de consumo distintos entre os períodos.
+### Análise Avançada de Artistas
+
+Investigação do comportamento de reprodução por artista:
+* Artistas mais ouvidos em modo aleatório
+* Artistas com maior quantidade de músicas puladas
+* Evolução dos artistas mais escutados por ano
+
+---
+
+## Principais Insights
+
+### Forte concentração em poucos artistas
+
+Apesar da grande diversidade musical, parte significativa do tempo total de reprodução está concentrada em um grupo reduzido de artistas favoritos.
+
+### Consumo predominante durante tarde e noite
+
+A maior parte das reproduções ocorre nos períodos da tarde e da noite.
+
+### Celular como principal dispositivo
+
+O smartphone representa a maior parcela das reproduções realizadas.
+
+### Baixa taxa de músicas puladas
+
+A maior parte das reproduções é concluída, indicando comportamento de escuta relativamente consistente.
+
+### Evolução de preferências ao longo dos anos
+
+Os rankings anuais permitem observar mudanças claras nos artistas mais consumidos ao longo do período analisado.
+
+---
+
+## Recursos de UX
+
+O relatório utiliza:
+* Navegação por bookmarks
+* Filtros globais
+* Segmentação por artista
+* Segmentação por álbum
+* Segmentação por período
+* Navegação entre páginas
+
+---
+
+## Competências Demonstradas
+
+* ETL com Power Query
+* Modelagem Dimensional
+* Uso de Dimensões
+* DAX
+* Storytelling com Dados
+* Design de Dashboards
+* Bookmarks e Navegação Avançada
+* Análise Exploratória de Dados
+* Business Intelligence
+
+---
+
+## Possíveis Evoluções
+
+* Integração com Spotify API
+* Classificação por gênero musical
+* Análise de popularidade das músicas
+* Clusterização de preferências musicais
+* Comparação entre períodos de consumo
+* Dashboard em atualização automática
+
+## Acesso ao dashboard
+[Spotify-Listening-Data-Analysis](https://bit.ly/4b4pBTj)
+
 
