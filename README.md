@@ -173,6 +173,8 @@ O relatório utiliza:
 * Comparação entre períodos de consumo
 * Dashboard em atualização automática
 
+---
+
 ## Acesso ao dashboard
 [Spotify-Listening-Data-Analysis](https://bit.ly/4b4pBTj)
 
