@@ -176,6 +176,6 @@ O relatório utiliza:
 ---
 
 ## Acesso ao dashboard
-[Spotify-Listening-Data-Analysis](https://bit.ly/4b4pBTj)
+[Spotify-Listening-Data-Analysis](https://app.powerbi.com/view?r=eyJrIjoiMjAzZDE2YjgtOWEyZi00MzY1LTlhYzEtYmIxZjE5NzRhODYwIiwidCI6IjJiY2MxN2RlLWY5MGItNDJjOC1hZGYwLTE5ZGQwZjFmMGYwNyJ9)
 
 
